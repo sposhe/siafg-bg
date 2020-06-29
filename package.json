@@ -1,5 +1,5 @@
 {
-  "name": "gulp-pug-rig",
+  "name": "siafg-bg",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sposhe/gulp-pug-rig.git"
+    "url": "git+https://github.com/sposhe/siafg-bg.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sposhe/gulp-pug-rig/issues"
+    "url": "https://github.com/sposhe/siafg-bg/issues"
   },
-  "homepage": "https://github.com/sposhe/gulp-pug-rig#readme",
+  "homepage": "https://github.com/sposhe/siafg-bg#readme",
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "fs": "0.0.1-security",

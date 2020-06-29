@@ -1,7 +1,4 @@
-# gulp-pug-rig
-
-A rig for projects using [Gulp](https://gulpjs.com/) to compile [Pug](https://pugjs.org/) into HTML, [Sass](https://sass-lang.com/) into CSS, and [Webpack](https://webpack.js.org/) to bundle JavaScript modules.
-
+# siafg-bg
 
 ## Getting Started
 
