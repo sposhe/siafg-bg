@@ -66,7 +66,7 @@ function sassWatch(cb) {
 // javascript
 function jsBundle() {
   return src('src/js/app.js')
-    .pipe( webpack() )
+    .pipe( webpack({ mode: 'development' }) )
     .pipe( rename({ basename: 'app' }) )
     .pipe( dest(`${destination}/js`) )
     .pipe( bsync.reload({ stream: true }) )

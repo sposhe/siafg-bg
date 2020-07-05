@@ -1,0 +1,15 @@
+extends ../templates/_root
+
+prepend vars
+  
+  - let bodyClass = 'demo'
+
+append body
+  
+  form.controls
+    button.prev(type='button', onclick='updatePosition(-1)') ◄
+    progress(value='0', max='6')
+    button.next(type='button', onclick='updatePosition(1)') ►
+  
+  svg.background(data-position='0', viewBox='0 0 500 500', preserveAspectRatio='xMidYMin slice', xmlns='http://www.w3.org/2000/svg')
+    include ../includes/_hexes

@@ -1,0 +1,58 @@
+// demo
+
+body.demo {
+
+  form.controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    text-align: center;
+  }
+
+  svg.background {
+    background: #F9F8FF;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: 100vh;
+    transition: width 1s;
+    g {
+      transition: transform 1s;
+      transform: translateY(0);
+    }
+    &[data-position='0'] {
+      width: 100vw;
+    }
+
+    $base: -300px;
+    $offset: 100;
+
+    @each $position in 1, 2, 3, 4, 5 {
+      &[data-position='#{$position + 1}'] {
+        g.tangerines { transform: translateY(#{($base - (0 * $offset)) * $position}); }
+        g.ghosts     { transform: translateY(#{($base - (1 * $offset)) * $position}); }
+        g.lavenders  { transform: translateY(#{($base - (2 * $offset)) * $position}); }
+      }
+    }
+
+  }
+
+}
+
+
+
+// preview page
+
+body.svg {
+  background: gray;
+  svg.background  {
+    background: #F9F8FF;
+    display: block;
+    position: relative;
+    margin: 2rem auto;
+    width: 500px;
+  }
+}
